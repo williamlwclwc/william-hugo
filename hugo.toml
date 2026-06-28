@@ -12,6 +12,8 @@ enableRobotsTXT = true
     weight = 1
     [languages.en.params]
       shortLabel = 'EN'
+    [languages.en.params.navItems]
+      homepage = { href = "https://williamlwclwc.github.io", target = "_blank", title = "About" }
   [languages.zh]
     contentDir = 'content/zh'
     label = '中文'
@@ -19,6 +21,8 @@ enableRobotsTXT = true
     weight = 2
     [languages.zh.params]
       shortLabel = '中'
+    [languages.zh.params.navItems]
+      homepage = { href = "https://williamlwclwc.github.io", target = "_blank", title = "关于" }
 
 [params]
 lightTheme = "emerald"
@@ -43,5 +47,3 @@ imageZoomableInPost = true
 showPrevNextPost = true
 reorderNavItems = ["homepage", "search", "rss", "posts", "categories", "tags"]
 
-[params.navItems]
-homepage = { href = "https://williamlwclwc.github.io", target = "_blank", title = "About" }

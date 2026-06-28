@@ -12,7 +12,7 @@
   <div class="container flex justify-between px-4">
   {{ end }}
     <section class="flex items-center gap-2">
-      <a href="{{ "/" | relLangURL }}">
+      <a href="{{ site.Home.RelPermalink }}">
         <div class="avatar hover:avatar-online">
           <div class="w-12 h-12 rounded-full select-none">
             <img src="{{ site.Params.avatar | relURL }}" alt="{{ site.Params.headerTitle }}" />
@@ -23,7 +23,7 @@
       {{ if or site.Params.headerTitle site.Params.motto }}
       <div>
         {{ if site.Params.headerTitle }}
-        <a href="{{ "/" | relLangURL }}" class="text-lg font-semibold cursor-pointer">
+        <a href="{{ site.Home.RelPermalink }}" class="text-lg font-semibold cursor-pointer">
           {{ site.Params.headerTitle }}
         </a>
         {{ end }}
@@ -50,7 +50,8 @@
         {{/* Mobile: language switcher */}}
         {{ if gt (len site.Languages) 1 }}
         <li>
-          <div class="flex items-center gap-2 px-2">
+          <div class="flex items-center gap-2 px-2 py-1">
+            <ion-icon name="language-outline" class="text-base shrink-0"></ion-icon>
             {{ $defaultLang := (index site.Languages 0).Lang }}
             {{ range $i, $lang := site.Languages }}
               {{ if gt $i 0 }}<span class="text-base-content/30">|</span>{{ end }}
@@ -64,9 +65,9 @@
                 {{ end }}
                 {{ if not $href }}
                   {{ if eq $lang.Lang $defaultLang }}
-                    {{ $href = "/" | relURL }}
+                    {{ $href = site.Home.RelPermalink }}
                   {{ else }}
-                    {{ $href = printf "/%s/" $lang.Lang | relURL }}
+                    {{ $href = printf "%s%s/" site.Home.RelPermalink $lang.Lang }}
                   {{ end }}
                 {{ end }}
                 <a href="{{ $href }}" class="text-sm font-semibold hover:underline">{{ $shortLabel }}</a>
@@ -75,32 +76,6 @@
           </div>
         </li>
         {{ end }}
-
-        {{/* Mobile: dark/light toggle */}}
-        <li>
-          <div x-data="{ icons: [
-            { name: 'sunny', status: 'n' },
-            { name: 'moon', status: 'y' },
-            { name: 'desktop', status: 'auto' }
-          ] }" class="flex items-center gap-1 px-2">
-            <template x-for="icon in icons">
-              <div
-                role="button"
-                tabindex="0"
-                :aria-label="'Select ' + icon.name + ' mode'"
-                class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
-                :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
-                @click.stop="$store.darkMode.toggle(icon.status)"
-              >
-                <ion-icon
-                  :name="`${icon.name}-outline`"
-                  class="group-hover:text-primary-content"
-                  :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
-                ></ion-icon>
-              </div>
-            </template>
-          </div>
-        </li>
       </ul>
     </div>
 
@@ -156,9 +131,9 @@
             {{ end }}
             {{ if not $href }}
               {{ if eq $lang.Lang $defaultLang }}
-                {{ $href = "/" | relURL }}
+                {{ $href = site.Home.RelPermalink }}
               {{ else }}
-                {{ $href = printf "/%s/" $lang.Lang | relURL }}
+                {{ $href = printf "%s%s/" site.Home.RelPermalink $lang.Lang }}
               {{ end }}
             {{ end }}
             <a href="{{ $href }}" class="hover:underline">{{ $shortLabel }}</a>

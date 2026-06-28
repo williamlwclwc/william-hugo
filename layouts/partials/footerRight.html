@@ -1,0 +1,37 @@
+<div
+  class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="Select light mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'sunny' && 'bg-primary'"
+    @click="$store.darkMode.toggle('n')"
+  >
+    <ion-icon name="sunny-outline" class="text-base group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'sunny' && 'text-primary-content'"></ion-icon>
+  </div>
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="Select dark mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'moon' && 'bg-primary'"
+    @click="$store.darkMode.toggle('y')"
+  >
+    <ion-icon name="moon-outline" class="text-base group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'moon' && 'text-primary-content'"></ion-icon>
+  </div>
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="Select auto mode"
+    class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+    :class="$store.darkMode.icon() === 'desktop' && 'bg-primary'"
+    @click="$store.darkMode.toggle('auto')"
+  >
+    <ion-icon name="desktop-outline" class="text-base group-hover:text-primary-content"
+      :class="$store.darkMode.icon() === 'desktop' && 'text-primary-content'"></ion-icon>
+  </div>
+</div>
