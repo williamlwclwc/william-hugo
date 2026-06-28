@@ -1,3 +1,21 @@
 baseURL = 'https://williamlwclwc.github.io/william-hugo/'
+defaultContentLanguage = 'en'
 locale = 'en-us'
 title = 'My New Hugo Project'
+theme = 'dream'
+
+[params]
+lightTheme = "emerald"
+darkTheme = "forest"
+
+author = "William Liu"
+headerTitle = "My New Hugo Project"
+# motto = ""
+# avatar = "img/avatar.png"
+# description = ""
+
+siteStartYear = 2026
+
+# rss = true
+# showTableOfContents = true
+# showPrevNextPost = true
