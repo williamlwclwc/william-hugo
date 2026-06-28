@@ -1,21 +1,28 @@
 baseURL = 'https://williamlwclwc.github.io/william-hugo/'
 defaultContentLanguage = 'en'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'William Liu'
 theme = 'dream'
+enableRobotsTXT = true
 
 [params]
 lightTheme = "emerald"
 darkTheme = "forest"
 
 author = "William Liu"
-headerTitle = "My New Hugo Project"
-# motto = ""
-# avatar = "img/avatar.png"
-# description = ""
+description = "William Liu's personal blog"
+avatar = "img/avatar.png"
+headerTitle = "William Liu"
+motto = "Your motto here."
 
 siteStartYear = 2026
 
-# rss = true
-# showTableOfContents = true
-# showPrevNextPost = true
+rss = true
+
+favicon = "favicon.ico"
+
+stickyNav = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
+showPrevNextPost = true
