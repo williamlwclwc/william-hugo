@@ -1,5 +1,5 @@
 socials = [
+  { href = "https://williamlwclwc.github.io", target = "_blank", icon = "home-outline", title = "Homepage" },
   { href = "https://github.com/williamlwclwc", target = "_blank", icon = "logo-github", title = "GitHub" },
-  # { href = "https://x.com/yourhandle", target = "_blank", icon = "logo-x", title = "X" },
-  # { href = "https://www.linkedin.com/in/yourprofile", target = "_blank", icon = "logo-linkedin", title = "LinkedIn" },
+  { href = "https://www.linkedin.com/in/yourprofile", target = "_blank", icon = "logo-linkedin", title = "LinkedIn" },
 ]

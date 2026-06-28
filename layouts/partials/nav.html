@@ -44,38 +44,8 @@
       <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
         <ion-icon name="menu" class="text-2xl"></ion-icon>
       </div>
-      <ul tabindex="0" class="dropdown-content menu w-44 bg-base-100 rounded-box z-1 shadow-md">
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
         {{ partial "navMobileMenu.html" (dict "navItems" $navItems) }}
-
-        {{/* Mobile: language switcher */}}
-        {{ if gt (len site.Languages) 1 }}
-        <li>
-          <div class="flex items-center gap-2 px-2 py-1">
-            <ion-icon name="language-outline" class="text-base shrink-0"></ion-icon>
-            {{ $defaultLang := (index site.Languages 0).Lang }}
-            {{ range $i, $lang := site.Languages }}
-              {{ if gt $i 0 }}<span class="text-base-content/30">|</span>{{ end }}
-              {{ $shortLabel := $lang.Params.shortLabel | default $lang.Label }}
-              {{ if eq $lang.Lang $.Lang }}
-                <span class="text-sm font-semibold text-base-content/40 cursor-default">{{ $shortLabel }}</span>
-              {{ else }}
-                {{ $href := "" }}
-                {{ range $.Translations }}
-                  {{ $href = .RelPermalink }}
-                {{ end }}
-                {{ if not $href }}
-                  {{ if eq $lang.Lang $defaultLang }}
-                    {{ $href = site.Home.RelPermalink }}
-                  {{ else }}
-                    {{ $href = printf "%s%s/" site.Home.RelPermalink $lang.Lang }}
-                  {{ end }}
-                {{ end }}
-                <a href="{{ $href }}" class="text-sm font-semibold hover:underline">{{ $shortLabel }}</a>
-              {{ end }}
-            {{ end }}
-          </div>
-        </li>
-        {{ end }}
       </ul>
     </div>
 
@@ -112,33 +82,6 @@
           {{ partial "navCustomItems.html" (dict "navItems" $navItems "mobile" true) }}
           {{ end }}
         </ul>
-      </div>
-      {{ end }}
-
-      {{/* Desktop: language switcher */}}
-      {{ if gt (len site.Languages) 1 }}
-      <div class="flex items-center gap-1 text-sm font-semibold">
-        {{ $defaultLang := (index site.Languages 0).Lang }}
-        {{ range $i, $lang := site.Languages }}
-          {{ if gt $i 0 }}<span class="text-base-content/30">|</span>{{ end }}
-          {{ $shortLabel := $lang.Params.shortLabel | default $lang.Label }}
-          {{ if eq $lang.Lang $.Lang }}
-            <span class="text-base-content/40 cursor-default">{{ $shortLabel }}</span>
-          {{ else }}
-            {{ $href := "" }}
-            {{ range $.Translations }}
-              {{ $href = .RelPermalink }}
-            {{ end }}
-            {{ if not $href }}
-              {{ if eq $lang.Lang $defaultLang }}
-                {{ $href = site.Home.RelPermalink }}
-              {{ else }}
-                {{ $href = printf "%s%s/" site.Home.RelPermalink $lang.Lang }}
-              {{ end }}
-            {{ end }}
-            <a href="{{ $href }}" class="hover:underline">{{ $shortLabel }}</a>
-          {{ end }}
-        {{ end }}
       </div>
       {{ end }}
 

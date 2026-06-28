@@ -1,10 +1,35 @@
-<div
-  class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full"
->
+<div class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full">
+  {{/* Language switcher */}}
+  {{ if gt (len site.Languages) 1 }}
+  <div class="flex items-center gap-1 text-sm font-semibold">
+    {{ $defaultLang := (index site.Languages 0).Lang }}
+    {{ range $i, $lang := site.Languages }}
+      {{ if gt $i 0 }}<span class="text-base-content/30">·</span>{{ end }}
+      {{ $shortLabel := $lang.Params.shortLabel | default $lang.Label }}
+      {{ if eq $lang.Lang $.Lang }}
+        <span class="text-base-content/40 cursor-default">{{ $shortLabel }}</span>
+      {{ else }}
+        {{ $href := "" }}
+        {{ range $.Translations }}
+          {{ $href = .RelPermalink }}
+        {{ end }}
+        {{ if not $href }}
+          {{ if eq $lang.Lang $defaultLang }}
+            {{ $href = site.Home.RelPermalink }}
+          {{ else }}
+            {{ $href = printf "%s%s/" site.Home.RelPermalink $lang.Lang }}
+          {{ end }}
+        {{ end }}
+        <a href="{{ $href }}" class="hover:underline">{{ $shortLabel }}</a>
+      {{ end }}
+    {{ end }}
+  </div>
+  <span class="text-base-content/20 select-none">|</span>
+  {{ end }}
+
+  {{/* Dark/light toggle */}}
   <div
-    role="button"
-    tabindex="0"
-    aria-label="Select light mode"
+    role="button" tabindex="0" aria-label="Select light mode"
     class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
     :class="$store.darkMode.icon() === 'sunny' && 'bg-primary'"
     @click="$store.darkMode.toggle('n')"
@@ -13,9 +38,7 @@
       :class="$store.darkMode.icon() === 'sunny' && 'text-primary-content'"></ion-icon>
   </div>
   <div
-    role="button"
-    tabindex="0"
-    aria-label="Select dark mode"
+    role="button" tabindex="0" aria-label="Select dark mode"
     class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
     :class="$store.darkMode.icon() === 'moon' && 'bg-primary'"
     @click="$store.darkMode.toggle('y')"
@@ -24,9 +47,7 @@
       :class="$store.darkMode.icon() === 'moon' && 'text-primary-content'"></ion-icon>
   </div>
   <div
-    role="button"
-    tabindex="0"
-    aria-label="Select auto mode"
+    role="button" tabindex="0" aria-label="Select auto mode"
     class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
     :class="$store.darkMode.icon() === 'desktop' && 'bg-primary'"
     @click="$store.darkMode.toggle('auto')"
