@@ -1,9 +1,20 @@
 baseURL = 'https://williamlwclwc.github.io/william-hugo/'
 defaultContentLanguage = 'en'
-locale = 'en-us'
 title = 'William Liu'
 theme = 'dream'
 enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    label = 'English'
+    locale = 'en-us'
+    weight = 1
+  [languages.zh]
+    contentDir = 'content/zh'
+    label = '中文'
+    locale = 'zh-Hans'
+    weight = 2
 
 [params]
 lightTheme = "emerald"
