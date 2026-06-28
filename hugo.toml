@@ -1,0 +1,3 @@
+baseURL = 'https://williamlwclwc.github.io/william-hugo/'
+locale = 'en-us'
+title = 'My New Hugo Project'
