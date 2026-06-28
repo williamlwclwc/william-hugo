@@ -10,19 +10,23 @@ lightTheme = "emerald"
 darkTheme = "forest"
 
 author = "William Liu"
-description = "William Liu's personal blog"
+description = "William Liu's Blog"
 avatar = "img/avatar.png"
 headerTitle = "William Liu"
-motto = "Your motto here."
+motto = "Part of the journey is the end."
 
 siteStartYear = 2026
 
 rss = true
 
-favicon = "favicon.ico"
+favicon = "img/avatar.png"
 
 stickyNav = true
 showTableOfContents = true
 showSummaryCoverInPost = true
 imageZoomableInPost = true
 showPrevNextPost = true
+reorderNavItems = ["homepage", "search", "rss", "posts", "categories", "tags"]
+
+[params.navItems]
+homepage = { href = "https://williamlwclwc.github.io", target = "_blank", title = "About" }
