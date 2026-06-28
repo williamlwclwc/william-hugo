@@ -1,13 +1,16 @@
 <div class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full">
   {{/* Language switcher */}}
   {{ if gt (len site.Languages) 1 }}
-  <div class="flex items-center gap-1 text-sm font-semibold">
+  <div class="flex items-center gap-1">
     {{ $defaultLang := (index site.Languages 0).Lang }}
+    {{ $basePath := (urls.Parse site.BaseURL).Path }}
     {{ range $i, $lang := site.Languages }}
-      {{ if gt $i 0 }}<span class="text-base-content/30">·</span>{{ end }}
+      {{ if gt $i 0 }}<span class="text-base-content/20 select-none">·</span>{{ end }}
       {{ $shortLabel := $lang.Params.shortLabel | default $lang.Label }}
       {{ if eq $lang.Lang $.Lang }}
-        <span class="text-base-content/40 cursor-default">{{ $shortLabel }}</span>
+        <div class="inline-flex items-center justify-center p-1 rounded-full bg-primary cursor-default">
+          <span class="text-xs font-bold text-primary-content leading-none">{{ $shortLabel }}</span>
+        </div>
       {{ else }}
         {{ $href := "" }}
         {{ range $.Translations }}
@@ -15,12 +18,12 @@
         {{ end }}
         {{ if not $href }}
           {{ if eq $lang.Lang $defaultLang }}
-            {{ $href = site.Home.RelPermalink }}
+            {{ $href = $basePath }}
           {{ else }}
-            {{ $href = printf "%s%s/" site.Home.RelPermalink $lang.Lang }}
+            {{ $href = printf "%s%s/" $basePath $lang.Lang }}
           {{ end }}
         {{ end }}
-        <a href="{{ $href }}" class="hover:underline">{{ $shortLabel }}</a>
+        <a href="{{ $href }}" class="text-xs font-semibold hover:underline px-1">{{ $shortLabel }}</a>
       {{ end }}
     {{ end }}
   </div>

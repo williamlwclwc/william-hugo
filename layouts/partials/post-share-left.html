@@ -1,0 +1,6 @@
+{{ range (index hugo.Data "socials").socials }}
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+  href="{{ .href }}" target="{{ .target }}" rel="noopener noreferrer" title="{{ .title }}">
+  <ion-icon class="group-hover:text-primary-content" name="{{ .icon }}"></ion-icon>
+</a>
+{{ end }}
