@@ -46,5 +46,4 @@ showSummaryCoverInPost = true
 imageZoomableInPost = true
 showPrevNextPost = true
 reorderNavItems = ["homepage", "search", "rss", "posts", "categories", "tags"]
-reorderShares = []
 
