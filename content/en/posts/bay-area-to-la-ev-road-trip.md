@@ -6,7 +6,9 @@ tags: ["disneyland", "los-angeles", "road-trip", "tesla", "travel-guide"]
 categories: ["Travel"]
 ---
 
-I cobbled together a nine-day break, with six days devoted to driving down to Los Angeles — the agenda: Disneyland, whale watching at Newport Beach, The Getty, and Griffith Observatory. We drove the whole way in a Tesla with FSD, heading south on I-5 and 101, stopping at Superchargers along the route. The pace was deliberately relaxed, with buffer time built into every day.
+I cobbled together a nine-day break, with six days devoted to driving down to Los Angeles — the agenda: Disneyland, whale watching at Newport Beach, The Getty, and Griffith Observatory. We drove the whole way in a Tesla with FSD, heading south on I-5 and 101, stopping at Superchargers along the route. The pace was deliberately relaxed, with buffer time built into every day. Total spend: approximately $2,400 for two people.
+
+📷 [Trip Photo Gallery](https://williamlwcliu.craft.me/bYWGr908uNSfpd/b/63D0AEBC-1FA7-4749-A03C-C261C70987C5/LA-Disney-Trip)
 
 ## Day 1: Bay Area → Anaheim
 
@@ -34,6 +36,8 @@ We split the two parks across two days. A few tips that genuinely helped:
 ## Day 5: The Getty, Hollywood & Griffith Observatory
 
 After checking out, we headed to The Getty first. Tickets require advance booking on their website, and their app includes an audio guide that makes the visit noticeably better — plan for a full morning. In the afternoon we passed through Hollywood, and we saved the evening for Griffith Observatory. No reservation needed; just walk up and take in the city lights.
+
+**Parking tip:** Park at the Greek Theater lot at the base of the hill (free), then take the shuttle or walk up — parking at the top is limited and pricey.
 
 We stayed the night in Santa Clarita — significantly cheaper than West LA and perfectly positioned for the drive home the next day.
 

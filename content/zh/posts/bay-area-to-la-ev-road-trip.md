@@ -6,7 +6,9 @@ tags: ["disneyland", "los-angeles", "road-trip", "tesla", "旅游攻略"]
 categories: ["旅游"]
 ---
 
-请假凑了个九天小长假，其中六天自驾洛杉矶——主题很简单：Disneyland、Newport Beach 赏鲸、The Getty 和 Griffith Observatory。全程开特斯拉 FSD，从湾区一路南下，沿 I-5 和 101 途经几个超充站，整体节奏不紧不慢，每天都留了缓冲时间。
+请假凑了个九天小长假，其中六天自驾洛杉矶——主题很简单：Disneyland、Newport Beach 赏鲸、The Getty 和 Griffith Observatory。全程开特斯拉 FSD，从湾区一路南下，沿 I-5 和 101 途经几个超充站，整体节奏不紧不慢，每天都留了缓冲时间。两人合计花费约 $2,400。
+
+📷 [旅行照片 Gallery](https://williamlwcliu.craft.me/bYWGr908uNSfpd/b/63D0AEBC-1FA7-4749-A03C-C261C70987C5/LA-Disney-Trip)
 
 ## Day 1：湾区出发，直奔 Anaheim
 
@@ -34,6 +36,8 @@ categories: ["旅游"]
 ## Day 5：The Getty、Hollywood 与 Griffith Observatory 夜景
 
 退房后先去 The Getty——门票需要提前在官网预约，下载 App 还能听语音讲解，值得花一个上午慢慢逛。下午往 Hollywood 方向，晚上专程去 Griffith Observatory 看夜景，无需预约，直接上去就行。
+
+**停车提示**：建议停到山下的 Greek Theater 停车场（免费），然后坐 shuttle 或步行上山——山上停车位紧张，停车费也贵。
 
 当晚入住 Santa Clarita，比 West LA 便宜很多，第二天返程也方便。
 
