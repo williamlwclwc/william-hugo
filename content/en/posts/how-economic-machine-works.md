@@ -208,18 +208,6 @@ If wages and consumption rise rapidly without a corresponding increase in output
 
 By contrast, if productivity keeps improving, unit costs may fall. The same income then buys more goods and services, and real living standards rise.
 
-This also reminds us: falling prices do not necessarily mean recession.
-
-“Bad deflation,” caused by collapsing demand, comes with unemployment, defaults, and bankruptcies. “Good deflation,” caused by productivity gains, can instead show up as lower costs, higher output, and greater purchasing power.
-
-The falling prices of televisions, computers, software, and communication services over the past few decades are not the same as Great Depression-style deflation.
-
-So when central banks face falling prices, they should not only ask whether inflation is below target; they should also ask:
-
-> Are prices falling because demand is collapsing, or because productivity is improving?
-
-The two can look similar, yet require completely different policy responses.
-
 ## What the Economic Machine Model Leaves Out
 
 The strength of a mechanical model is clarity. Its weakness is also clarity.
@@ -317,10 +305,10 @@ At this point, one question still cannot be avoided: if higher productivity is t
 
 *How an Economy Grows and Why It Crashes*, the island-economy parable, emphasizes saving, capital formation, and productivity improvement, but it quietly assumes one condition: the extra fish caught will always be wanted and can be consumed by someone. In a real economy, additional output may take the form of steel, housing, cars, or chips, and demand for these goods is not unlimited. More production capacity does not automatically create matching effective demand.
 
-One important observation from Marxism lies precisely in this gap. The problem may not arise in production itself, but in the “realization” process: workers collectively create more goods, but if income and wealth become increasingly concentrated, ordinary households may not have enough purchasing power for all that output to be transformed into income and profits in the market. Marx’s labor theory of value and historical determinism have serious limitations, but his question about distribution, power, and how the surplus product is absorbed by the market has not lost its significance.
+From this perspective, Marx’s labor theory of value reveals a similar limitation. It explains value primarily from the production side, anchoring it in socially necessary labor time. But even if a commodity requires a great deal of labor, it cannot realize a corresponding market value when scarcity and effective demand are absent. The marginal revolution later filled this gap with subjective utility and supply-and-demand analysis. What is worth preserving here is not the labor theory of value’s specific answer, but the question it forces us to keep asking: why does expanding production not guarantee that society can absorb the resulting output?
 
 What we call overcapacity is therefore not just “too many factories.” It is a loss of coordination between production, income distribution, and demand. If productivity gains do not translate into higher wages, lower prices, shorter hours, or broader purchasing power, they may be absorbed into corporate profits, asset prices, and another round of investment, eventually producing a cycle in which more supply coexists with weaker demand.
 
 So the more accurate conclusion may be this: **productivity growth is necessary for prosperity, but not sufficient for it.** A healthy economy must not only ask “How much can we produce?” It must also ask “Who owns the fruits of production?” “Who can afford to consume?” and “Is there still a direction in which new capital is worth investing?”
 
-These questions go beyond the economic machine model itself. In the next article, I want to continue by comparing Marxism, *How an Economy Grows and Why It Crashes*, and demand-side economics in how they understand production, consumption, and overcapacity, and why “supply creates its own demand” often fails in reality.
+These questions go beyond the economic machine model itself. In the next article, I want to compare the labor theory of value, *How an Economy Grows and Why It Crashes*, marginalism, and demand-side economics in how they understand value, production, consumption, and overcapacity—and why “supply creates its own demand” so often fails in reality.
