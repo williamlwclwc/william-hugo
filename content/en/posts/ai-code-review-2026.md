@@ -7,7 +7,7 @@ tags: ["ai-code-review", "agentic-engineering", "software-engineering", "verific
 categories: ["AI Engineering"]
 ---
 
-Next in this series: [My Approach to AI Code Review: Selective Review, with AI Doing the Triage]({{< relref "ai-review-selective-triage.md" >}})
+Next in this series: [My Thoughts on AI Code Review: Selective Review, with AI Doing the Triage]({{< relref "ai-review-selective-triage.md" >}})
 
 *Once AI made writing code cheap, review became the slowest part of delivery. Over the past few months, I have read more than twenty talks, articles, and data reports on AI code review. This post organizes them into a map: where the problems lie, what people are doing, and what remains unanswered.*
 
@@ -113,7 +113,7 @@ The weakest check is the agent's own claim that the task is done. Another overlo
 
 Taken together, these materials make “code review is dead” both understandable and misleading. What is disappearing is the activity of reading every line of a diff. The function of review remains. It is splitting apart: some moves earlier into design and agreements, some moves later into behavioral verification and runtime, and much routine checking goes to layered automation. Human attention concentrates on a smaller number of important changes according to risk.
 
-Uncertainty runs through this map. Most evidence consists of practitioner accounts and vendor data, while tools and models change every few months. In the next post, I describe my own current position, including where I stand on whether the author should count as a reviewer.
+Uncertainty runs through this map. Most evidence consists of practitioner accounts and vendor data, while tools and models change every few months. In the next post, I describe my own current thinking, including how I view the question of whether the author should count as a reviewer.
 
 ## References
 

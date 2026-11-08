@@ -1,5 +1,5 @@
 ---
-title: "My Approach to AI Code Review: Selective Review, with AI Doing the Triage"
+title: "My Thoughts on AI Code Review: Selective Review, with AI Doing the Triage"
 date: 2026-11-08
 draft: false
 description: "Review intent and design early, ask AI for test evidence and risk assessments, then focus human review where it matters most."
@@ -73,7 +73,7 @@ This mechanism can fail too. AI triage can label a high-risk change as low risk.
 
 The previous post described a disagreement: should the person who prompts and directs the coding agent count as a reviewer? Anthropic's Claude Code team says yes, on the principle that whoever initiates a change is responsible for it. Gitar/Sonar's Korlam says no, because that person shares the agent's context.
 
-My position is: **the author must participate in review, but should not count as a reviewer.**
+My view is: **the author must participate in review, but should not count as a reviewer.**
 
 **Why should the author not count?** I have two reasons.
 
@@ -102,7 +102,7 @@ These steps do not require a large infrastructure overhaul, yet they can immedia
 
 ## Closing thoughts
 
-My current position is:
+My current thinking is:
 
 - The core question in code review is **where to review**.
 - Review should **move earlier**, into intent and design.
