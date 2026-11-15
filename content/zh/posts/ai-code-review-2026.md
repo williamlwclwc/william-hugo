@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/ai-code-review-2026.webp"
 title: "AI 写代码之后，代码审查变成了什么：2026 年的行业现状"
 date: 2026-11-08
 draft: false

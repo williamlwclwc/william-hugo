@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/ai-review-selective-triage.webp"
 title: "AI 代码审查，我的思考：选择性 review，让 AI 先做分诊"
 date: 2026-11-08
 draft: false

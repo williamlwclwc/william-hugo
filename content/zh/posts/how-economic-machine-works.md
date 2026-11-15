@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/how-economic-machine-works.webp"
 title: "经济机器如何运行：生产率决定方向，信贷制造周期"
 date: 2026-07-22
 description: "从一笔交易出发，理解信贷如何推动繁荣与衰退、长期债务为何最终需要去杠杆，以及为什么生产率是经济增长的必要条件，却不是充分条件。"

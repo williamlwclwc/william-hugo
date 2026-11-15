@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/how-economic-machine-works.webp"
 title: "How the Economic Machine Works: Productivity Sets the Direction, Credit Creates the Cycles"
 date: 2026-07-22
 description: "Starting from a single transaction, this essay explains how credit drives booms and busts, why long-term debt eventually requires deleveraging, and why productivity is necessary—but not sufficient—for prosperity."

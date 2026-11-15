@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/bay-area-to-la-ev-road-trip.webp"
 title: "电动车湾区南下六日：Disneyland、Newport Beach 赏鲸与 The Getty"
 date: 2026-06-28
 description: "特斯拉自驾洛杉矶六天，串联 Disneyland、Newport Beach 赏鲸、The Getty 和 Griffith Observatory，记录路线规划、超充策略和省心小技巧。"

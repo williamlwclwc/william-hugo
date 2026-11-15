@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/ai-code-review-2026.webp"
 title: "What Code Review Looks Like After AI Starts Writing the Code: The Industry in 2026"
 date: 2026-11-08
 draft: false

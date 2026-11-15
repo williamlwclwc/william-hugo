@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/ai-review-selective-triage.webp"
 title: "My Thoughts on AI Code Review: Selective Review, with AI Doing the Triage"
 date: 2026-11-08
 draft: false

@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/what-creates-economic-value.webp"
 title: "Where Does Value Come From? Why Production Does Not Equal Value"
 date: 2026-07-22
 description: "Using the labor theory of value, marginal utility, and effective demand, this essay explains why production alone cannot determine value, why China's supply-led growth model has produced overcapacity, and why falling technology prices do not prove that economy-wide deflation can be harmless."

@@ -1,4 +1,5 @@
 ---
+cover: "/william-hugo/img/bay-area-to-la-ev-road-trip.webp"
 title: "6-Day EV Road Trip: Bay Area to LA — Disneyland, Whale Watching & The Getty"
 date: 2026-06-28
 description: "Six days driving a Tesla from the Bay Area to Los Angeles, hitting Disneyland, whale watching at Newport Beach, The Getty, and Griffith Observatory — with Supercharger tips and park strategies along the way."
