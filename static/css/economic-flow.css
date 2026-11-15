@@ -1,0 +1,132 @@
+.economic-flow {
+  --flow-ink: #18383d;
+  --flow-line: #668683;
+  --flow-panel: #fff9ee;
+  margin-block: 1.6rem;
+  padding: clamp(.75rem, 3vw, 1.4rem);
+  border: 1px solid var(--flow-line);
+  border-radius: .8rem;
+  background: #eaf1ef;
+  color: var(--flow-ink);
+}
+
+.economic-flow .economic-flow__caption {
+  display: grid;
+  gap: .3rem;
+  max-width: 34rem;
+  margin-inline: auto;
+  padding: .65rem .8rem;
+  border: 1px solid var(--flow-line);
+  border-radius: .55rem;
+  background: var(--flow-panel);
+  color: inherit;
+  text-align: center;
+  font-size: .95rem;
+  font-style: normal;
+}
+
+.economic-flow strong {
+  color: inherit;
+}
+
+.economic-flow .economic-flow__nodes {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: .8rem;
+  margin: 0;
+  padding: 1.4rem 0 0;
+  list-style: none;
+}
+
+.economic-flow .economic-flow__node {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: .25rem;
+  margin: 0;
+  padding: .65rem .55rem;
+  border: 1px solid var(--flow-line);
+  border-radius: .55rem;
+  background: var(--flow-panel);
+  text-align: center;
+  font-size: .95rem;
+  overflow-wrap: anywhere;
+}
+
+.economic-flow__arrow {
+  color: #8a4e17;
+  line-height: 1;
+}
+
+.economic-flow__nodes--branch::before,
+.economic-flow__nodes--branch::after,
+.economic-flow__nodes--branch .economic-flow__node::before {
+  position: absolute;
+  content: "";
+}
+
+.economic-flow__nodes--branch::before {
+  top: 0;
+  left: 50%;
+  height: .7rem;
+  border-left: 1px solid var(--flow-line);
+}
+
+.economic-flow__nodes--branch::after {
+  top: .7rem;
+  left: calc(25% - .2rem);
+  right: calc(25% - .2rem);
+  border-top: 1px solid var(--flow-line);
+}
+
+.economic-flow__nodes--branch .economic-flow__node::before {
+  top: -.7rem;
+  left: 50%;
+  height: .7rem;
+  border-left: 1px solid var(--flow-line);
+}
+
+.economic-flow .economic-flow__nodes--timeline {
+  gap: 1.8rem;
+  padding-top: .8rem;
+}
+
+.economic-flow__nodes--timeline .economic-flow__node + .economic-flow__node::before {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 1.8rem;
+  color: #8a4e17;
+  content: "→";
+  transform: translateY(-50%);
+}
+
+html.dark .economic-flow {
+  --flow-ink: #f4eddf;
+  --flow-line: #75958e;
+  --flow-panel: #263f43;
+  background: #192e33;
+}
+
+html.dark .economic-flow__arrow,
+html.dark .economic-flow__nodes--timeline .economic-flow__node + .economic-flow__node::before {
+  color: #f6bd77;
+}
+
+@media (max-width: 480px) {
+  .economic-flow .economic-flow__nodes--timeline {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.55rem;
+  }
+
+  .economic-flow__nodes--timeline .economic-flow__node + .economic-flow__node::before {
+    top: auto;
+    right: auto;
+    bottom: 100%;
+    left: 50%;
+    line-height: 1.55rem;
+    content: "↓";
+    transform: translateX(-50%);
+  }
+}

@@ -77,6 +77,8 @@ So every loan has two phases:
 - At the time of borrowing, spending exceeds income
 - At the time of repayment, spending must fall below income
 
+{{< economic-flow kind="timeline" title="Borrowing shifts spending power across time" premise="Income is $100 in each period. Borrow $50 today and repay it with $5 interest next period." first="Today: $100 income + $50 loan" firstResult="$150 available to spend" second="Next period: $100 income − $55 repayment" secondResult="$45 available to spend" >}}
+
 If credit expansion is broad enough, the entire economy shows a similar timing mismatch: demand during booms is partly the result of borrowing against future demand.
 
 That does not mean debt is inherently harmful. The key question is:

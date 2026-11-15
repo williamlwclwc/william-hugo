@@ -58,6 +58,9 @@ This is where convergence is clearest. However, that convergence is mainly among
 - Kun Chen's personal workflow ends with a risk assessment and skips diff review for low-risk changes.
 - In Voss's survey of practice, human checkpoints remain where correctness is hard to verify automatically, blast radius is large, or someone must explicitly sign off and take responsibility.
 
+
+{{< figure src="/william-hugo/img/ai-code-review-2026-review-depth.webp" alt="A magnifying glass over a wooden trunk, with evidence checklists beside its leaves" caption="John Kim’s tree analogy suggests a close read for shared code and an evidence check for isolated changes." >}}
+
 Anthropic's Claude Code team offers a concrete policy. Its risk tiers specify how many people must approve: documentation, copy, internal features, and incremental changes behind feature flags require none; ordinary product changes and sensitive areas such as caching, auto-updates, and system prompts require one; the highest-risk code requires two. Several supporting rules are notable:
 
 - A classifier assigns the tier based on the change, rather than the author's choice.

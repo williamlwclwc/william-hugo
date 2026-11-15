@@ -87,6 +87,8 @@ But economics is not about abstract desire; it is about **effective demand**—d
 
 A person may desperately need a home, but if their income is insufficient and they cannot obtain reasonable credit, that need will not turn into a market transaction.
 
+{{< economic-flow kind="branch" title="When does wanting something become effective demand?" premise="Both shoppers want a $10 fish. Neither can borrow." first="Buyer A has $10" firstResult="Can buy the fish" second="Buyer B has $6" secondResult="Cannot buy at this price" >}}
+
 This distinction matters enormously, because production itself does not ensure that purchasing power is evenly distributed to consumers.
 
 Suppose a factory doubles output through automation and lays off half its workers. Labor productivity rises sharply in the statistics, supply increases, and unit costs fall.

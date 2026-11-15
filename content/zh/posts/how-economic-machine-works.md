@@ -77,6 +77,8 @@ Ray Dalio 在“How the Economic Machine Works”中，正是从这一点出发�
 - 借款时，支出高于收入
 - 还款时，支出必须低于收入
 
+{{< economic-flow kind="timeline" title="借款把购买力提前" premise="两期收入各 100 元，今天借 50 元，下一期还 50 元本金和 5 元利息。" first="今天：100 元收入 + 50 元借款" firstResult="可花 150 元" second="下一期：100 元收入 − 55 元本息" secondResult="可花 45 元" >}}
+
 如果信贷扩张足够广泛，整个经济都会表现出类似的时间错配：繁荣时期的需求，部分来自对未来需求的提前透支。
 
 但这并不意味着债务天然有害。关键问题是：

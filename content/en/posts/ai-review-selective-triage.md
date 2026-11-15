@@ -24,6 +24,9 @@ That makes **selective review** the real problem: human attention is limited and
 
 My answer has three steps: move review earlier, let AI do the initial triage, and let people choose what to examine based on the results.
 
+
+{{< figure src="/william-hugo/img/ai-review-selective-triage-review-workflow.webp" alt="A design blueprint, code changes tagged with test and risk markers, and a hand inspecting a change" caption="Review the design before coding. Then let AI surface test evidence and risks so people can decide where to look closely." >}}
+
 ## 1. Review intent and design before implementation
 
 Do not wait until the code exists to begin reviewing.

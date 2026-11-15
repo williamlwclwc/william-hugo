@@ -1,0 +1,23 @@
+{{- $kind := .Get "kind" -}}
+{{- if not (in (slice "branch" "timeline") $kind) -}}
+  {{- errorf "economic-flow: kind must be branch or timeline at %s" .Position -}}
+{{- end -}}
+<link rel="stylesheet" href="{{ "css/economic-flow.css" | relURL }}">
+<figure class="economic-flow">
+  <figcaption class="economic-flow__caption">
+    <strong>{{ .Get "title" }}</strong>
+    <span>{{ .Get "premise" }}</span>
+  </figcaption>
+  <ol class="economic-flow__nodes economic-flow__nodes--{{ $kind }}">
+    <li class="economic-flow__node">
+      <strong>{{ .Get "first" }}</strong>
+      <span aria-hidden="true" class="economic-flow__arrow">↓</span>
+      <span>{{ .Get "firstResult" }}</span>
+    </li>
+    <li class="economic-flow__node">
+      <strong>{{ .Get "second" }}</strong>
+      <span aria-hidden="true" class="economic-flow__arrow">↓</span>
+      <span>{{ .Get "secondResult" }}</span>
+    </li>
+  </ol>
+</figure>
